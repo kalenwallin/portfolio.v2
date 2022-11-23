@@ -1,0 +1,55 @@
+{% for row in rows %}
+    <div class="netflix-slider row-container" id="row-{{ row.order }}-container">
+        <div class="row-icon-title-container" id="row-icon-title-{{ row.order }}-container">
+            <img src="/media/{{ row.icon }}" class="row-icon animate to-spin" id="row-icon-{{ row.order }}">
+            &nbsp
+            <p class="row-title animate to-slide-left" id="row-title-{{ row.order }}">{{ row.title }}</p>
+        </div>
+        <div class="swiper" id="row-carousel-{{ row.order }}-container">
+            <div class="swiper-wrapper">
+                {% for item in row.item_set.all|dictsort:"order" %}
+                    <div class="swiper-slide">
+                        <a href="{% url 'page' item.page_set.first.slug  %}">
+                            <img src="/media/{{ item.cover_image }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+{% endfor %}
+
+{% block bodyjs %}
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        100: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        640: {
+         slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+    }
+});
+{% endblock bodyjs %}
+</script>

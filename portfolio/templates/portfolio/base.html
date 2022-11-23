@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalen Wallin's Portfolio</title>
+        <meta name="author" content="Kalen Wallin">
+        <meta name="description" content="Kalen Wallin's Portfolio showcases his skills through jobs,
+        programming projects, school transcripts, community service, and life experiences.">
+
+        <!-- basic favicon -->
+        <link rel="icon" href="https://i.imgur.com/Bwd4mhJ.png">
+
+        <!-- Facebook sharing data -->
+        <meta property="og:image" content="https://i.imgur.com/CUgaAIY.png">
+        <meta property="og:description" content="Kalen Wallin's Portfolio showcases his skills through jobs,
+        development projects, school transcripts, and community service.">
+        <meta property="og:title" content="Kalen Wallin's Portfolio">
+
+        <!-- Twitter sharing data -->
+        <meta name="twitter:title" content="Kalen Wallin's Portfolio">
+
+    	<!-- Sheets -->
+    	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    	<link href="{% static 'css/themes.css' %}" rel="stylesheet">
+    	<link href="{% static 'css/app.css' %}" rel="stylesheet">
+
+    	<!-- Scripts -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    	{% block head %}
+    	{% endblock head %}
+    </head>
+    <body>
+        {% block body %}
+        {% endblock body %}
+        {% block bodyjs %}
+        {% endblock bodyjs %}
+        <script src="{% static 'js/animation.js' %}"></script>
+    </body>
+</html>

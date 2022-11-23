@@ -1,0 +1,13 @@
+<div class="metadata-container">
+    <div class="title-container">
+        <h1>{{ page.item.title }}</h1>
+        <p>{{ page.item.description }}</p>
+    </div>
+    <div class="date-container">
+        {% if page.updated_on is page.created_on %}
+            <p class="metadata">Posted by {{ page.author }} on {{ page.created_on }}</p>
+        {% else %}
+            <p class="metadata">Updated by {{ page.author }} on {{ page.created_on }}</p>
+        {% endif %}
+    </div>
+</div>

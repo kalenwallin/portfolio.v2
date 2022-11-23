@@ -1,0 +1,47 @@
+{% extends 'portfolio/base.html' %}
+
+{% block body %}{{ super }}
+    {% include "portfolio/page_navbar.html" %}
+    <div class="{% if page.is_game %}game{% else %}page{% endif %}">
+        <div class="content">
+            {% if not page.is_game %}
+                {% include "portfolio/page_metadata.html" %}
+                <div class="image-container">
+                    <img src="https://kalenwallin.pythonanywhere.com/media/{{ page.item.cover_image }}">
+                </div>
+                {% if page.story %}
+                    <div class="story-container">
+                        {{ page.story|safe }}
+                    </div>
+                {% elif page.pdf %}
+                    <div class="pdf-container">
+
+                    </div>
+                {% elif page.iframe %}
+                    <div class="iframe-container">
+
+                    </div>
+                {% endif %}
+                {% include 'portfolio/page_heart.html' %}
+            {% else %}
+                <div class="game-container">
+                    {% if page.item.title is "Minieval" %}
+                        {% include 'portfolio/minieval/Minieval.html' %}
+                    {% else %}
+                        {{ page.iframe|safe }}
+                    {% endif %}
+                </div>
+                {% include "portfolio/page_metadata.html" %}
+                {% include 'portfolio/page_heart.html' %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock body %}
+{% block bodyjs %}
+    <script src="https://unpkg.com/htmx.org@1.6.0"></script>
+    <script>
+        document.body.addEventListener('htmx:configRequest', (e) => {
+            e.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+        });
+    </script>
+{% endblock bodyjs %}

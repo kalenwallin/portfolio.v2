@@ -1,0 +1,22 @@
+<div class="navbar-container">
+    {% for row in rows %}
+        <div class="navbar-icon-container" id="navbar-icon-{{ row.order }}">
+            <a href="#row-{{ row.order }}-container">
+                <img class="navbar-icon" src="/media/{{ row.icon }}" href="#row-{{ row.order }}">
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+    var win = $(window);
+    win.on("scroll", function (event) {
+        if (window.pageYOffset > 100) {
+            $('.navbar-container').css({'background-color': '#141414', 'box-shadow': '0 2px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%)'});
+            $('.navbar-icon').css({'filter': 'invert(0)'});
+        } else {
+            $('.navbar-container').css({'background-color': 'transparent', 'box-shadow': 'none'});
+            $('.navbar-icon').css({'filter': 'invert(1)'});
+        }
+    });
+</script>
