@@ -28,20 +28,20 @@ body {
 }
 
 .grey-heart {
-    background-image: url('{% static 'media/Grey-Heart.webp' %}');
+    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Grey-Heart.webp');
     background-size: cover;
     background-position: center;
     transition: 250ms all;
 }
 
 .grey-heart-cracked {
-    background-image: url('{% static 'media/Grey-Heart-Cracked.png' %}');
+    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Grey-Heart-Cracked.png');
     background-size: cover;
     background-position: center;
 }
 
 .red-heart {
-    background-image: url('{% static 'media/Red-Heart.webp' %}');
+    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Red-Heart.webp');
     background-size: cover;
     background-position: center;
 }
@@ -69,7 +69,9 @@ body {
     padding: 1rem;
 }
 
+/*
 .page .metadata-container {}
+*/
 
 .page .title-container {
     display: flex;
@@ -80,13 +82,14 @@ body {
     margin-bottom: 0;
 }
 
-.page .date-container {}
+/* .page .date-container {}
 
 .date-container .metadata {
     /* font size small */
     /* font color grey */
-}
+/*} */
 
+/*
 .page .description-container {}
 
 .page .image-container {}
@@ -97,7 +100,7 @@ body {
 
 .page .iframe-container {}
 
-.page .game-container {}
+.page .game-container {} */
 
 .doc-iframe {
     width: 100vw;
@@ -151,7 +154,7 @@ img {
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('{% static 'media/headerimage2.jpg' %}');
+    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/headerimage2.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -759,3 +762,4 @@ img {
         width: 3.5em;
 
     }
+}
