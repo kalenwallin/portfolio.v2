@@ -8,14 +8,8 @@ def index(request):
     context = {'rows': rows}
     return render(request, 'portfolio/portfolio.html', context)
 
-def minieval(request):
-    return render(request, 'portfolio/minieval/Minieval.html')
-
 def fappy_borbs(request):
     return render(request, 'portfolio/fappy_borbs/fappy_borbs.html')
-
-def metaverse_notes(request):
-    return render(request, 'portfolio/googledocs/metaverse_notes.html')
 
 # Hearting code modified from here: https://www.youtube.com/watch?v=AZwc9hDBi04
 
