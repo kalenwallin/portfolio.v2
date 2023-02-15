@@ -9,4 +9,4 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('<slug:slug>/', views.page.as_view(), name='page'),
     path('like/<int:id>', views.page_heart, name='page_heart'),
-] + static('/minieval/', document_root='/home/kalenwallin/kalenwallin/static/minieval')
+]
