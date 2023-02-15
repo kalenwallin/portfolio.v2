@@ -15,6 +15,7 @@ env.bak/
 venv.bak/ 
 .vercel
 
-# static
+# Static & Media 
 
 static/
+media/
