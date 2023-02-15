@@ -31,8 +31,8 @@ class Page(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     is_game = models.BooleanField(default=False)
     slug = models.SlugField(max_length=200, unique=True)
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now= True)
+    created_on = models.TextField(blank=True)
+    updated_on = models.TextField(blank=True)
     author = models.TextField(blank=True)
     hearts = models.ManyToManyField(Lover, related_name="page_hearts", blank=True)
 

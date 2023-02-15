@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import environ
 from pathlib import Path
+import socket
+socket.getaddrinfo('localhost', 8080)
 
 env = environ.Env()
 environ.Env.read_env()
@@ -30,7 +32,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel-app','.now.sh','django.kalenwallin.com']
+ALLOWED_HOSTS = ['.vercel-app','.now.sh','django.kalenwallin.com','localhost']
 
 
 # Application definition

@@ -1,0 +1,490 @@
+[
+    {
+        "model": "portfolio.row",
+        "pk": 1,
+        "fields": {
+            "title": "Resume & Transcripts",
+            "icon": "file-document.png",
+            "order": 8
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 2,
+        "fields": {
+            "title": "Work Experience",
+            "icon": "briefcase-outline.png",
+            "order": 1
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 3,
+        "fields": {
+            "title": "Video Games",
+            "icon": "controller.png",
+            "order": 2
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 4,
+        "fields": {
+            "title": "Mobile Apps",
+            "icon": "cellphone-text.png",
+            "order": 4
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 5,
+        "fields": {
+            "title": "Websites",
+            "icon": "monitor-dashboard.png",
+            "order": 3
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 6,
+        "fields": {
+            "title": "Community Service",
+            "icon": "format-list-text.png",
+            "order": 9
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 7,
+        "fields": {
+            "title": "Social Accounts",
+            "icon": "account-box-multiple.png",
+            "order": 5
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 8,
+        "fields": {
+            "title": "Blog",
+            "icon": "post.png",
+            "order": 6
+        }
+    },
+    {
+        "model": "portfolio.row",
+        "pk": 9,
+        "fields": {
+            "title": "Iceland - Study Abroad Journals",
+            "icon": "image-filter-hdr.png",
+            "order": 7
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 1,
+        "fields": {
+            "cover_image": "Portfolio2.0CCHSTranscripthighres.png",
+            "title": "CCHS Transcript",
+            "description": "High School Transcript",
+            "row": 1,
+            "order": 4
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 2,
+        "fields": {
+            "cover_image": "Portfolio2.0Resume-1highres.png",
+            "title": "Resume",
+            "description": "",
+            "row": 1,
+            "order": 1
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 3,
+        "fields": {
+            "cover_image": "Portfolio2.0UNLTranscript2highres.png",
+            "title": "UNL Transcript",
+            "description": "University Transcript",
+            "row": 1,
+            "order": 2
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 4,
+        "fields": {
+            "cover_image": "Portfolio2.0RUTranscript2highres_SNQjZHR.png",
+            "title": "RU Transcript",
+            "description": "Reykjavik University Transcript",
+            "row": 1,
+            "order": 3
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 5,
+        "fields": {
+            "cover_image": "Portfolio2.0FarmAfield2.png",
+            "title": "FarmAfield",
+            "description": "Web Development Internship",
+            "row": 2,
+            "order": 1
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 6,
+        "fields": {
+            "cover_image": "Portfolio2.0Minieval-1highres.png",
+            "title": "Minieval",
+            "description": "Video Game Development",
+            "row": 3,
+            "order": 1
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 7,
+        "fields": {
+            "cover_image": "Portfolio2.0FappyBorbs-1highres.png",
+            "title": "Fappy Borbs",
+            "description": "Video Game Development",
+            "row": 3,
+            "order": 2
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 8,
+        "fields": {
+            "cover_image": "Portfolio2.0UNLTAhighres.png",
+            "title": "University of Nebraska-Lincoln",
+            "description": "Teaching Assistant",
+            "row": 2,
+            "order": 2
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 9,
+        "fields": {
+            "cover_image": "Portfolio_2.0_-_Initialize_2_higher_res_fOg7ujh.png",
+            "title": "Initialize",
+            "description": "Curriculum Developer",
+            "row": 2,
+            "order": 4
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 10,
+        "fields": {
+            "cover_image": "Portfolio_2.0_-_Imperial_Pool_8CXyuvz.png",
+            "title": "Imperial Pool",
+            "description": "Lifeguard",
+            "row": 2,
+            "order": 4
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 11,
+        "fields": {
+            "cover_image": "Portfolio_2.0_-_Lifting_Calculator.png",
+            "title": "Lifting Calculator",
+            "description": "Mobile App",
+            "row": 4,
+            "order": 1
+        }
+    },
+    {
+        "model": "portfolio.item",
+        "pk": 12,
+        "fields": {
+            "cover_image": "Portfolio_2.0_-_Wallin_Farms.png",
+            "title": "Wallin Farms",
+            "description": "Farmhand",
+            "row": 2,
+            "order": 5
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 2,
+        "fields": {
+            "ip": "129.93.161.230"
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 30,
+        "fields": {
+            "ip": "129.93.161.238"
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 31,
+        "fields": {
+            "ip": "199.47.65.167"
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 32,
+        "fields": {
+            "ip": "174.235.208.206"
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 33,
+        "fields": {
+            "ip": "129.93.161.229"
+        }
+    },
+    {
+        "model": "portfolio.lover",
+        "pk": 34,
+        "fields": {
+            "ip": "129.93.161.228"
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 1,
+        "fields": {
+            "story": "",
+            "pdf": "page/pdf/cchstranscript_CJxsxQg.pdf",
+            "iframe": "",
+            "item": 1,
+            "is_game": false,
+            "slug": "high-school-transcript",
+            "created_on": "2022-08-20T19: 40: 20.522Z",
+            "updated_on": "2022-08-20T19: 40: 20.527Z",
+            "author": "",
+            "hearts": []
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 2,
+        "fields": {
+            "story": "",
+            "pdf": "empty",
+            "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/1306817?color=5a5a5a\" allowfullscreen=\"\" width=\"980\" height=\"688\">\r\n    <a href=\"https://kalenwallin.itch.io/fappy-borbs\">Play Fappy Borbs on itch.io</a>\r\n</iframe>",
+            "item": 7,
+            "is_game": true,
+            "slug": "fappy-borbs",
+            "created_on": "2022-08-20T19:40:20.522Z",
+            "updated_on": "2022-11-30T04:07:07.950Z",
+            "author": "",
+            "hearts": [
+                2,
+                34
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 3,
+        "fields": {
+            "story": "<p>I worked at FarmAfield from <i>May 2021 to December 2021</i>. Then I took a break during my study abroad in Iceland and resumed work from <i>June 2022 to August 2022</i>. I'm currently on a break from the internship to focus on my education and honors thesis.</p>\r\n\r\n<p>During my first run at FarmAfield, I worked with a team of 4 software engineers to maintain and add features to the FarmAfield website. During the second run, I worked with only 2 software engineers.</p>\r\n\r\n<h3>Details</h3>\r\n\r\n<p>I followed Agile practices and test-driven development</p>\r\n<p>I worked with the <b>Django framework</b> to develop the site. <b>GitHub</b> was used to manage our code base. I used GitHub to commit my code, create pull requests, and perform peer reviews. <b>CircleCI</b> was used for continuous integration and automated testing. I managed to cut our test times in half by implementing parallel testing.</p>\r\n<p>The languages I worked with were <b>Python</b> (backend) and <b>HTML, CSS, JavaScript</b> (frontend)</p>\r\n<p>I wrote a ton of <b>unit tests</b>.</p>\r\n<p>Jira was used to manage our tasks. I enjoyed using it and would be happy to use it again.</p>\r\n\r\n<h3>Notable Features:</h3>\r\n\r\n<h4>Dark Mode</h4>\r\n<p>Users can toggle between light and dark theme in their account settings. If a user's device/browser has a theme preference, then the website's theme is automatically set. Users can override this setting by toggle the theme in their account setting.</p>\r\n\r\n<h4>Email Preferences</h4>\r\nUsers can add a second email and manage their marketing email preferences in their account settings. Users can turn marketing emails on or off for each email. The preference is sent to the server using an AJAX POST request to avoid page refresh for best user experience.\r\n\r\n<h4>Solar Landing Page</h4>\r\nFarmAfield offers farmers the opportunity to set up solar panels on their land with funding from investors. I created the landing page and the My Solar Assessment form for our Solar site.",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 5,
+            "is_game": false,
+            "slug": "farmafield",
+            "created_on": "2022-08-20T19:40:20.522Z",
+            "updated_on": "2022-10-06T23:02:55.904Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2,
+                33
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 4,
+        "fields": {
+            "story": "",
+            "pdf": "empty",
+            "iframe": "{% load static %}\r\n\r\n<!DOCTYPE html>\r\n<html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>\r\n<head>\r\n\t<meta charset='utf-8' />\r\n\t<meta name='viewport' content='width=device-width, user-scalable=no' />\r\n\t<link id='-gd-engine-icon' rel='icon' type='image/png' href='favicon.png' />\r\n\t<title>Minieval</title>\r\n\t<style type='text/css'>\r\n\r\n\t\tbody {\r\n\t\t\ttouch-action: none;\r\n\t\t\tmargin: 0;\r\n\t\t\tborder: 0 none;\r\n\t\t\tpadding: 0;\r\n\t\t\ttext-align: center;\r\n\t\t\tbackground-color: black;\r\n\t\t}\r\n\r\n\t\t#canvas {\r\n\t\t\tdisplay: block;\r\n\t\t\tmargin: 0;\r\n\t\t\tcolor: white;\r\n\t\t}\r\n\r\n\t\t#canvas:focus {\r\n\t\t\toutline: none;\r\n\t\t}\r\n\r\n\t\t.godot {\r\n\t\t\tfont-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;\r\n\t\t\tcolor: #e0e0e0;\r\n\t\t\tbackground-color: #3b3943;\r\n\t\t\tbackground-image: linear-gradient(to bottom, #403e48, #35333c);\r\n\t\t\tborder: 1px solid #45434e;\r\n\t\t\tbox-shadow: 0 0 1px 1px #2f2d35;\r\n\t\t}\r\n\r\n\r\n\t\t/* Status display\r\n\t\t * ============== */\r\n\r\n\t\t#status {\r\n\t\t\tposition: absolute;\r\n\t\t\tleft: 0;\r\n\t\t\ttop: 0;\r\n\t\t\tright: 0;\r\n\t\t\tbottom: 0;\r\n\t\t\tdisplay: flex;\r\n\t\t\tjustify-content: center;\r\n\t\t\talign-items: center;\r\n\t\t\t/* don't consume click events - make children visible explicitly */\r\n\t\t\tvisibility: hidden;\r\n\t\t}\r\n\r\n\t\t#status-progress {\r\n\t\t\twidth: 366px;\r\n\t\t\theight: 7px;\r\n\t\t\tbackground-color: #38363A;\r\n\t\t\tborder: 1px solid #444246;\r\n\t\t\tpadding: 1px;\r\n\t\t\tbox-shadow: 0 0 2px 1px #1B1C22;\r\n\t\t\tborder-radius: 2px;\r\n\t\t\tvisibility: visible;\r\n\t\t}\r\n\r\n\t\t@media only screen and (orientation:portrait) {\r\n\t\t\t#status-progress {\r\n\t\t\t\twidth: 61.8%;\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t#status-progress-inner {\r\n\t\t\theight: 100%;\r\n\t\t\twidth: 0;\r\n\t\t\tbox-sizing: border-box;\r\n\t\t\ttransition: width 0.5s linear;\r\n\t\t\tbackground-color: #202020;\r\n\t\t\tborder: 1px solid #222223;\r\n\t\t\tbox-shadow: 0 0 1px 1px #27282E;\r\n\t\t\tborder-radius: 3px;\r\n\t\t}\r\n\r\n\t\t#status-indeterminate {\r\n\t\t\tvisibility: visible;\r\n\t\t\tposition: relative;\r\n\t\t}\r\n\r\n\t\t#status-indeterminate > div {\r\n\t\t\twidth: 4.5px;\r\n\t\t\theight: 0;\r\n\t\t\tborder-style: solid;\r\n\t\t\tborder-width: 9px 3px 0 3px;\r\n\t\t\tborder-color: #2b2b2b transparent transparent transparent;\r\n\t\t\ttransform-origin: center 21px;\r\n\t\t\tposition: absolute;\r\n\t\t}\r\n\r\n\t\t#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }\r\n\t\t#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }\r\n\r\n\t\t#status-notice {\r\n\t\t\tmargin: 0 100px;\r\n\t\t\tline-height: 1.3;\r\n\t\t\tvisibility: visible;\r\n\t\t\tpadding: 4px 6px;\r\n\t\t\tvisibility: visible;\r\n\t\t}\r\n\t</style>\r\n\r\n</head>\r\n<body>\r\n\t<canvas id='canvas'>\r\n\t\tHTML5 canvas appears to be unsupported in the current browser.<br />\r\n\t\tPlease try updating or use a different browser.\r\n\t</canvas>\r\n\t<div id='status'>\r\n\t\t<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>\r\n\t\t<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t\t<div></div>\r\n\t\t</div>\r\n\t\t<div id='status-notice' class='godot' style='display: none;'></div>\r\n\t</div>\r\n\r\n\t<script type='text/javascript' src='{% static 'js/Minieval.js' %}'></script>\r\n\t<script type='text/javascript'>//<![CDATA[\r\n\r\n\t\tvar engine = new Engine;\r\n\t\tvar setStatusMode;\r\n\t\tvar setStatusNotice;\r\n\r\n\t\t(function() {\r\n\r\n\t\t\tconst EXECUTABLE_NAME = 'Minieval';\r\n\t\t\tconst MAIN_PACK = '{% static 'Minieval.pck' %}';\r\n\t\t\tconst INDETERMINATE_STATUS_STEP_MS = 100;\r\n\r\n\t\t\tvar canvas = document.getElementById('canvas');\r\n\t\t\tvar statusProgress = document.getElementById('status-progress');\r\n\t\t\tvar statusProgressInner = document.getElementById('status-progress-inner');\r\n\t\t\tvar statusIndeterminate = document.getElementById('status-indeterminate');\r\n\t\t\tvar statusNotice = document.getElementById('status-notice');\r\n\r\n\t\t\tvar initializing = true;\r\n\t\t\tvar statusMode = 'hidden';\r\n\r\n\t\t\tvar animationCallbacks = [];\r\n\t\t\tfunction animate(time) {\r\n\t\t\t\tanimationCallbacks.forEach(callback => callback(time));\r\n\t\t\t\trequestAnimationFrame(animate);\r\n\t\t\t}\r\n\t\t\trequestAnimationFrame(animate);\r\n\r\n\t\t\tfunction adjustCanvasDimensions() {\r\n\t\t\t\tvar scale = window.devicePixelRatio || 1;\r\n\t\t\t\tvar width = window.innerWidth;\r\n\t\t\t\tvar height = window.innerHeight;\r\n\t\t\t\tcanvas.width = width * scale;\r\n\t\t\t\tcanvas.height = height * scale;\r\n\t\t\t\tcanvas.style.width = width + \"px\";\r\n\t\t\t\tcanvas.style.height = height + \"px\";\r\n\t\t\t}\r\n\t\t\tanimationCallbacks.push(adjustCanvasDimensions);\r\n\t\t\tadjustCanvasDimensions();\r\n\r\n\t\t\tsetStatusMode = function setStatusMode(mode) {\r\n\r\n\t\t\t\tif (statusMode === mode || !initializing)\r\n\t\t\t\t\treturn;\r\n\t\t\t\t[statusProgress, statusIndeterminate, statusNotice].forEach(elem => {\r\n\t\t\t\t\telem.style.display = 'none';\r\n\t\t\t\t});\r\n\t\t\t\tanimationCallbacks = animationCallbacks.filter(function(value) {\r\n\t\t\t\t\treturn (value != animateStatusIndeterminate);\r\n\t\t\t\t});\r\n\t\t\t\tswitch (mode) {\r\n\t\t\t\t\tcase 'progress':\r\n\t\t\t\t\t\tstatusProgress.style.display = 'block';\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase 'indeterminate':\r\n\t\t\t\t\t\tstatusIndeterminate.style.display = 'block';\r\n\t\t\t\t\t\tanimationCallbacks.push(animateStatusIndeterminate);\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase 'notice':\r\n\t\t\t\t\t\tstatusNotice.style.display = 'block';\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase 'hidden':\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tdefault:\r\n\t\t\t\t\t\tthrow new Error('Invalid status mode');\r\n\t\t\t\t}\r\n\t\t\t\tstatusMode = mode;\r\n\t\t\t}\r\n\r\n\t\t\tfunction animateStatusIndeterminate(ms) {\r\n\r\n\t\t\t\tvar i = Math.floor(ms / INDETERMINATE_STATUS_STEP_MS % 8);\r\n\t\t\t\tif (statusIndeterminate.children[i].style.borderTopColor == '') {\r\n\t\t\t\t\tArray.prototype.slice.call(statusIndeterminate.children).forEach(child => {\r\n\t\t\t\t\t\tchild.style.borderTopColor = '';\r\n\t\t\t\t\t});\r\n\t\t\t\t\tstatusIndeterminate.children[i].style.borderTopColor = '#dfdfdf';\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tsetStatusNotice = function setStatusNotice(text) {\r\n\r\n\t\t\t\twhile (statusNotice.lastChild) {\r\n\t\t\t\t\tstatusNotice.removeChild(statusNotice.lastChild);\r\n\t\t\t\t}\r\n\t\t\t\tvar lines = text.split('\\n');\r\n\t\t\t\tlines.forEach((line) => {\r\n\t\t\t\t\tstatusNotice.appendChild(document.createTextNode(line));\r\n\t\t\t\t\tstatusNotice.appendChild(document.createElement('br'));\r\n\t\t\t\t});\r\n\t\t\t};\r\n\r\n\t\t\tengine.setProgressFunc((current, total) => {\r\n\r\n\t\t\t\tif (total > 0) {\r\n\t\t\t\t\tstatusProgressInner.style.width = current/total * 100 + '%';\r\n\t\t\t\t\tsetStatusMode('progress');\r\n\t\t\t\t\tif (current === total) {\r\n\t\t\t\t\t\t// wait for progress bar animation\r\n\t\t\t\t\t\tsetTimeout(() => {\r\n\t\t\t\t\t\t\tsetStatusMode('indeterminate');\r\n\t\t\t\t\t\t}, 500);\r\n\t\t\t\t\t}\r\n\t\t\t\t} else {\r\n\t\t\t\t\tsetStatusMode('indeterminate');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tfunction displayFailureNotice(err) {\r\n\t\t\t\tvar msg = err.message || err;\r\n\t\t\t\tconsole.error(msg);\r\n\t\t\t\tsetStatusNotice(msg);\r\n\t\t\t\tsetStatusMode('notice');\r\n\t\t\t\tinitializing = false;\r\n\t\t\t};\r\n\r\n\t\t\tif (!Engine.isWebGLAvailable()) {\r\n\t\t\t\tdisplayFailureNotice('WebGL not available');\r\n\t\t\t} else {\r\n\t\t\t\tsetStatusMode('indeterminate');\r\n\t\t\t\tengine.setCanvas(canvas);\r\n\t\t\t\tengine.startGame(EXECUTABLE_NAME, MAIN_PACK).then(() => {\r\n\t\t\t\t\tsetStatusMode('hidden');\r\n\t\t\t\t\tinitializing = false;\r\n\t\t\t\t}, displayFailureNotice);\r\n\t\t\t}\r\n\t\t})();\r\n\t//]]></script>\r\n</body>\r\n</html>",
+            "item": 6,
+            "is_game": true,
+            "slug": "minieval",
+            "created_on": "2022-08-20T20:07:58.978Z",
+            "updated_on": "2022-10-06T23:02:24.123Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                33
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 5,
+        "fields": {
+            "story": "",
+            "pdf": "page/pdf/Kalen_Wallin_Transcript_2022.pdf",
+            "iframe": "",
+            "item": 4,
+            "is_game": false,
+            "slug": "study-abroad-transcript",
+            "created_on": "2022-08-20T20:13:26.417Z",
+            "updated_on": "2022-08-20T20:13:26.417Z",
+            "author": "Kalen Wallin",
+            "hearts": []
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 6,
+        "fields": {
+            "story": "",
+            "pdf": "page/pdf/unltranscript.pdf",
+            "iframe": "",
+            "item": 3,
+            "is_game": false,
+            "slug": "university-transcript",
+            "created_on": "2022-08-20T20:15:45.833Z",
+            "updated_on": "2022-11-30T04:04:02.365Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                34
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 7,
+        "fields": {
+            "story": "",
+            "pdf": "page/pdf/Resume.pdf",
+            "iframe": "",
+            "item": 2,
+            "is_game": false,
+            "slug": "resume",
+            "created_on": "2022-08-20T20:25:17.373Z",
+            "updated_on": "2022-11-30T04:03:39.174Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                34
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 8,
+        "fields": {
+            "story": "<p>I worked as a teaching assistant for the University of Nebraska-Lincoln from <i>August 2021 to December 2021</i>. I quit this job when I studied abroad in Iceland.</p>\r\n\r\n<p>I worked with a team of 3 teaching assistants to provide teaching assistance to Professor Bhuvana Gopal for Software Engineering (CSCE 361).</p>\r\n\r\n<h3>Responsibilties</h3>\r\n\r\n<h4>Office Hours</h4>\r\n<p>I held weekly office hours to help answer any questions the students had.</p>\r\n\r\n<h4>Grading</h4>\r\n<p>I graded assignments, quizzes, and exams.</p>\r\n\r\n<h4>Meetings</h4>\r\n<p>I attended weekly meetings where we discussed our responsibilities for the week and split up work.</p>\r\n\r\n<h4>Technical Walkthrough</h4>\r\n<p>At the beginning of the semester, I held a zoom call to teach students how to set up the frontend of a voting application using pure HTML and CSS.</p>",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 8,
+            "is_game": false,
+            "slug": "unl-teaching-assistant",
+            "created_on": "2022-08-24T17:53:29.431Z",
+            "updated_on": "2022-09-06T00:43:17.060Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 9,
+        "fields": {
+            "story": "<p>I worked at Initialize from <i>January 2020 - May 2020</i>. I left at the end of semester and didn't have any interest in rejoining the team for the next semester.</p>\r\n\r\n<p>I worked with a team of four students to develop computer science curriculum workshops for students in rural areas.</p>\r\n\r\n<p>Our team was funded by the University of Nebraska-Lincoln's registered student organization, Initialize.</p>",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 9,
+            "is_game": false,
+            "slug": "initialize-cirriculum-developer",
+            "created_on": "2022-08-24T20:43:42.592Z",
+            "updated_on": "2022-08-25T03:21:06.499Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 10,
+        "fields": {
+            "story": "<p>I worked at the Imperial pool as a <b>lifeguard</b> during the summers of 2017, 2018, and 2019.</p>\r\n\r\n<h3>Responsibilities</h3>\r\n<p>During my job as a lifeguard, I spent most of my time supervising swimming. In my other time, I manned the cash register selling memberships, snacks and drinks. While the pool was closed, I taught swimming lessons and cleaned the facility.<p>\r\n\r\n<h3>Certification</h3>\r\n<p>At the time, I was certified as a lifeguard and to perform CPR. These certification are now expired.</p>",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 10,
+            "is_game": false,
+            "slug": "imperial-pool-lifeguarding",
+            "created_on": "2022-08-24T21:51:13.466Z",
+            "updated_on": "2022-08-25T03:24:30.102Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 11,
+        "fields": {
+            "story": "<p><b>The Lifting Calculator</b> is a mobile companion app for the workout \"<a href=\"https://www.t-nation.com/workouts/built-for-battle.\">Built For Battle</a>\" by Christian Thibaudeau. This application calculates how much weight to put on each side given the user's 3 rep max and day of workout. It also has dark mode for those night time workouts.</p>\r\n\r\n<h3>Purpose</h3>\r\n<p>I built this app to for two reasons:</p>\r\n<ol>\r\n<li>To reduce the amount of work my brother and I have to do during each training session.</li> \r\n<li>To experiment with Xamarin Forms.</li>\r\n</ol>\r\n\r\n<h3>Tooling</h3>\r\n<p>The development tools I used were <b>Xamarin Forms</b> which is a part of the .NET Framework and Visual Studio (VS) to compile and run the app.</p>\r\n\r\n<h3>Open Source<h3>\r\n<p>This app is an open sourced, available on <a href=\"https://github.com/kalenwallin/WeightLiftingCalculator\">GitHub</a></p>",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 11,
+            "is_game": false,
+            "slug": "lifting-calculator-mobile-app",
+            "created_on": "2022-08-24T22:09:44.645Z",
+            "updated_on": "2022-09-06T21:06:47.260Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "portfolio.page",
+        "pk": 12,
+        "fields": {
+            "story": "<p>I worked for my dad's farming business on three separate occasions:</p>\r\n\r\n<h3><i>November 2020 - January 2021</i></h3>\r\n\r\n<h4>Office Work</h4>\r\n<p>I registered corn tickets and invoices into Excel spreadsheets to look for discrepancies between actual prices and what the prices should be.</p>\r\n\r\n<h3><i>March 2020 - August 2020</i></h3>\r\n\r\n<h4>Field Work</h4>\r\n<p>I fixed tires, gearboxes, and center drives on irrigation pivots in corn fields. I strip tilled corn fields by operating a tractor. I moved seed boxes using a forklift. I mowed ditches along our fields using a tractor. I applied fertilizer with a coulter bar on 3,500 acres of growing corn.</p>\r\n\r\n<h3><i>Summers of 2014 - 2017</i></h3>\r\n<h4>Field Work</h4>\r\n<p>I helped fix tires, gearboxes, and center drives on irrigation pivots in corn fields.</p>",
+            "pdf": "empty",
+            "iframe": "",
+            "item": 12,
+            "is_game": false,
+            "slug": "wallin-farms",
+            "created_on": "2022-08-25T03:56:56.927Z",
+            "updated_on": "2022-09-06T02:41:34.300Z",
+            "author": "Kalen Wallin",
+            "hearts": [
+                2,
+                31
+            ]
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$160ltBKSAWGONNGkVBbkBV$JNMyXZf49ZSLLhypnAylZHkVuioERn1MNZCFT7A5xTA=",
+            "last_login": "2022-11-22T22:22:44.196Z",
+            "is_superuser": true,
+            "username": "kalenwallin",
+            "first_name": "Kalen",
+            "last_name": "Wallin",
+            "email": "kalenwallin1@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-07-09T18:39:14Z",
+            "groups": [
+            ]
+        }
+    }
+]
