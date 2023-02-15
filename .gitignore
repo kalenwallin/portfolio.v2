@@ -17,4 +17,4 @@ venv.bak/
 
 # static
 
-static/
+/static
