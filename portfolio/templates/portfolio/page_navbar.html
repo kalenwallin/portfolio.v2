@@ -1,7 +1,8 @@
+{% with backblaze_url="https://portfoliov2.s3.us-west-004.backblazeb2.com/" %}
 <div class="page-nav navbar-container">
     <div class="page-navbar-icon-container">
         <a href="/">
-            <img class="page-navbar-icon" src="/media/kw.png" href="/">
+            <img class="page-navbar-icon" src="{{ backblaze_url }}/media/kw.png" href="/">
         </a>
     </div>
 </div>
@@ -18,3 +19,4 @@
         }
     });
 </script>
+{% endwith %}

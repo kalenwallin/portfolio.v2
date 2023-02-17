@@ -134,8 +134,16 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# default static files settings for PythonAnywhere.
-# see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
+# Backblaze B2 Buckets based on AWS S3
+AWS_ACCESS_KEY_ID = env("BACKBLAZE_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = env("BACKBLAZE_SECRET_ACCESS_KEY")
+AWS_S3_REGION_NAME = env("BACKBLAZE_REGION")
+AWS_S3_ENDPOINT_URL = env("BACKBLAZE_URL")
+
+# files settings
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 BACKBLAZE_URL = env("BACKBLAZE_URL")
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
 MEDIA_URL = BACKBLAZE_URL + '/media/'
