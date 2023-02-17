@@ -1,6 +1,6 @@
-{% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
 {% extends 'portfolio/base.html' %}
 
+{% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
 {% block body %}{{ super }}
     {% include "portfolio/page_navbar.html" %}
     <div class="{% if page.is_game %}game{% else %}page{% endif %}">
