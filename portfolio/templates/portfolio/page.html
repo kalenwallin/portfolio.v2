@@ -1,8 +1,8 @@
 {% extends 'portfolio/base.html' %}
 
-{% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
 {% block body %}{{ super }}
     {% include "portfolio/page_navbar.html" %}
+    {% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
     <div class="{% if page.is_game %}game{% else %}page{% endif %}">
         <div class="content">
             {% if not page.is_game %}
@@ -35,6 +35,7 @@
             {% endif %}
         </div>
     </div>
+    {% endwith %}
 {% endblock body %}
 {% block bodyjs %}
     <script src="https://unpkg.com/htmx.org@1.6.0"></script>
@@ -44,4 +45,3 @@
         });
     </script>
 {% endblock bodyjs %}
-{% endwith %}

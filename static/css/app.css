@@ -58,9 +58,15 @@ body {
     transform: scale(1.3);
 }
 
-.page, .game-metadata {
+.page {
     width: 100%;
     max-width: 713px;
+}
+
+.game-metadata {
+    max-width: 980px;
+    padding-top: 1rem;
+    margin: auto;
 }
 
 .page .content {
@@ -69,9 +75,13 @@ body {
     padding: 1rem;
 }
 
-/*
-.page .metadata-container {}
-*/
+.game .metadata-container {
+    padding-left: 1rem;
+}
+
+.game #likesarea {
+    padding: 0rem 0rem 2rem 1rem;
+}
 
 .page .title-container {
     display: flex;
@@ -89,19 +99,6 @@ body {
 /* font color grey */
 /*} */
 
-/*
-.page .description-container {}
-
-.page .image-container {}
-
-.page .story-container {}
-
-.page .pdf-container {}
-
-.page .iframe-container {}
-
-.page .game-container {} */
-
 .doc-iframe {
     width: 100vw;
     height: 100vh;
@@ -109,6 +106,11 @@ body {
 }
 
 .game-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-content {
     display: flex;
     justify-content: center;
 }
@@ -620,7 +622,7 @@ img {
     /* Template:
      * Page
      */
-    .page, .game-metadata {
+    .page {
         width: 75%;
         margin: auto;
     }
@@ -679,7 +681,7 @@ img {
     /* Template:
      * Page
      */
-    .page, .game-metadata {
+    .page {
         width: 71%;
         margin: auto;
         padding-top: 72px;
@@ -710,7 +712,7 @@ img {
     /* Template:
      * Page
      */
-    .page, .game-metadata {
+    .page {
         width: 50%;
         margin: auto;
         padding-top: 72px;
@@ -740,7 +742,7 @@ img {
     /* Template:
      * Page
      */
-    .page, .game-metadata {
+    .page {
         padding-top: 82px;
         width: 28%;
     }

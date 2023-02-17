@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-        --black: #141414;
-        --grey: #c3c3c3;
-        --transparent-grey: #c3c3c314;
-        --white: #f5f5f5;
-        --theme: dark;
-        --red: #f54242;
-        --dark-grey: #848484;
+    --black: #141414;
+    --grey: #c3c3c3;
+    --transparent-grey: #c3c3c314;
+    --white: #f5f5f5;
+    --theme: dark;
+    --red: #f54242;
+    --dark-grey: #848484;
 }
 
 :root {
@@ -21,8 +21,12 @@ body {
     color: var(--grey);
 }
 
-.page .content {
+.page .content, .game .content {
     box-shadow: 0 0 5px var(--white);
+}
+
+.game-metadata, .game-content {
+    box-shadow: -3px 0px 10px -5px var(--white), 3px 0px 10px -5px var(--white);
 }
 
 .date-container .metadata {
