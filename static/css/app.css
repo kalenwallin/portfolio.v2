@@ -28,20 +28,20 @@ body {
 }
 
 .grey-heart {
-    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Grey-Heart.webp');
+    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/Grey-Heart.webp');
     background-size: cover;
     background-position: center;
     transition: 250ms all;
 }
 
 .grey-heart-cracked {
-    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Grey-Heart-Cracked.png');
+    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/Grey-Heart-Cracked.png');
     background-size: cover;
     background-position: center;
 }
 
 .red-heart {
-    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/Red-Heart.webp');
+    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/Red-Heart.webp');
     background-size: cover;
     background-position: center;
 }
@@ -86,7 +86,7 @@ body {
 
 .date-container .metadata {
     /* font size small */
-    /* font color grey */
+/* font color grey */
 /*} */
 
 /*
@@ -154,7 +154,7 @@ img {
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('https://portfoliov2.s3.us-west-004.backblazeb2.com/media/headerimage2.jpg');
+    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/headerimage2.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
