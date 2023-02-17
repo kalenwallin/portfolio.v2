@@ -1,3 +1,4 @@
+{% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
 {% extends 'portfolio/base.html' %}
 
 {% block body %}{{ super }}
@@ -7,7 +8,7 @@
             {% if not page.is_game %}
                 {% include "portfolio/page_metadata.html" %}
                 <div class="image-container">
-                    <img src="https://portfoliov2.s3.us-west-004.backblazeb2.com/media/{{ page.item.cover_image }}">
+                    <img src="{{ backblaze_url }}/media/{{ page.item.cover_image }}">
                 </div>
                 {% if page.story %}
                     <div class="story-container">
@@ -25,14 +26,12 @@
                 {% include 'portfolio/page_heart.html' %}
             {% else %}
                 <div class="game-container">
-                    {% if page.item.title is "Minieval" %}
-                        {% include 'portfolio/minieval/Minieval.html' %}
-                    {% else %}
-                        {{ page.iframe|safe }}
-                    {% endif %}
+                    {{ page.iframe|safe }}
                 </div>
-                {% include "portfolio/page_metadata.html" %}
-                {% include 'portfolio/page_heart.html' %}
+                <div class="game-metadata">
+                    {% include "portfolio/page_metadata.html" %}
+                    {% include 'portfolio/page_heart.html' %}
+                </div>
             {% endif %}
         </div>
     </div>
@@ -45,3 +44,4 @@
         });
     </script>
 {% endblock bodyjs %}
+{% endwith %}
