@@ -11,10 +11,10 @@
     var win = $(window);
     win.on("scroll", function (event) {
         if (window.pageYOffset > 100) {
-            $('.navbar-container').css({'background-color': '#141414', 'box-shadow': '0 2px 4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%)'});
+            $('.navbar-container').css({'background-color': '#141414', 'border-bottom': '1px solid rgb(39 39 42)'});
             $('.navbar-icon').css({'filter': 'invert(0)'});
         } else {
-            $('.navbar-container').css({'background-color': 'transparent', 'box-shadow': 'none'});
+            $('.navbar-container').css({'background-color': 'transparent', 'border-bottom': 'none'});
             $('.navbar-icon').css({'filter': 'invert(1)'});
         }
     });

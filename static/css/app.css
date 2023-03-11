@@ -61,6 +61,7 @@ body {
 .page {
     width: 100%;
     max-width: 713px;
+    margin: auto;
 }
 
 .game-metadata {
@@ -595,9 +596,9 @@ img {
     /* Template:
      * Page
      */
-    .page {
+    /* .page {
         padding-top: 62px;
-    }
+    } */
 
     /* Template:
      * Navbar
@@ -684,7 +685,7 @@ img {
     .page {
         width: 71%;
         margin: auto;
-        padding-top: 72px;
+        /* padding-top: 72px; */
     }
 
     /* Template:
@@ -715,7 +716,7 @@ img {
     .page {
         width: 50%;
         margin: auto;
-        padding-top: 72px;
+        /* padding-top: 72px; */
     }
 
     /* Template:
@@ -743,7 +744,7 @@ img {
      * Page
      */
     .page {
-        padding-top: 82px;
+        /* padding-top: 82px; */
         width: 28%;
     }
 

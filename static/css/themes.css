@@ -22,11 +22,11 @@ body {
 }
 
 .page .content, .game .content {
-    box-shadow: 0 0 5px var(--white);
+    border: 1px solid rgb(39 39 42);
 }
 
 .game-metadata, .game-content {
-    box-shadow: -3px 0px 10px -5px var(--white), 3px 0px 10px -5px var(--white);
+    border: 1px solid rgb(39 39 42);
 }
 
 .date-container .metadata {
