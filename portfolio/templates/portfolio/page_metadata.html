@@ -7,7 +7,7 @@
         {% if page.updated_on is page.created_on %}
             <p class="metadata">Posted by {{ page.author }} on {{ page.created_on }}</p>
         {% else %}
-            <p class="metadata">Updated by {{ page.author }} on {{ page.created_on }}</p>
+            <p class="metadata">Updated by {{ page.author }} on {{ page.updated_on }}</p>
         {% endif %}
     </div>
 </div>

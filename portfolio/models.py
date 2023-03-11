@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 
 class Row(models.Model):
@@ -25,14 +26,14 @@ class Lover(models.Model):
         return self.ip
 
 class Page(models.Model):
-    story = models.TextField(blank=True)
-    pdf = models.FileField(upload_to='page/pdf', default='empty', blank=True)
-    iframe = models.TextField(blank=True)
+    story = models.TextField(blank=True, null=True)
+    pdf = models.FileField(upload_to='page/pdf', default='empty', blank=True, null=True)
+    iframe = models.TextField(blank=True, null=True)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     is_game = models.BooleanField(default=False)
     slug = models.SlugField(max_length=200, unique=True)
-    created_on = models.TextField(blank=True)
-    updated_on = models.TextField(blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
     author = models.TextField(blank=True)
     hearts = models.ManyToManyField(Lover, related_name="page_hearts", blank=True)
 
