@@ -70,8 +70,6 @@ class Article(models.Model):
     name = models.CharField(max_length=200, blank=True, null=True)
     # short description of article
     short_description = models.CharField(max_length=200, blank=True, null=True)
-    # work experience position
-    position = models.CharField(max_length=200, blank=True, null=True)
     # when you started work
     start_date = models.CharField(max_length=200, blank=True, null=True)
     # when you finished work
