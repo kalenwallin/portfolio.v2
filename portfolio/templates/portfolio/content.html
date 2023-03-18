@@ -8,7 +8,7 @@
         </div>
         <div class="swiper" id="row-carousel-{{ row.order }}-container">
             <div class="swiper-wrapper">
-                {% for item in row.article_set.all %}
+                {% for item in row.article_set.all|dictsort:"order" %}
                     <div class="swiper-slide">
                         <a href="{% url 'page' item.slug  %}">
                             <img src="{{ item.image_url }}">

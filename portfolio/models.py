@@ -76,6 +76,8 @@ class Article(models.Model):
     content_rendered = RenderedMarkdownField(blank=True, null=True)
     # url slug generated from the name of the article
     slug = AutoSlugField(populate_from='name', blank=True, null=True)
+    # priority of the article
+    order = models.IntegerField(default=1)
 
     def __str__(self):
         if self.short_description:
