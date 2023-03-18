@@ -58,6 +58,8 @@ class Category(models.Model):
     name = models.CharField(max_length=200, blank=True, null=True)
     # cdn url of the icon of the category
     icon = models.CharField(max_length=200, blank=True, null=True)
+    # priority of the category
+    order = models.IntegerField(default=1)
 
     def __str__(self):
         return self.name
