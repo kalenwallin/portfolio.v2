@@ -18,4 +18,3 @@ venv.bak/
 # Static & Media
 media/
 .vscode/settings.json
-*.pyc
