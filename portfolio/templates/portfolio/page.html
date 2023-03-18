@@ -8,7 +8,7 @@
             {% if not page.is_game %}
                 {% include "portfolio/page_metadata.html" %}
                 <div class="image-container">
-                    <img src="{{ backblaze_url }}/media/{{ page.item.cover_image }}">
+                    <img src="{{ article.image_url }}">
                 </div>
                 {% if page.story %}
                     <div class="story-container">
@@ -23,14 +23,14 @@
 
                     </div>
                 {% endif %}
-                {% include 'portfolio/page_heart.html' %}
+                {% comment %} {% include 'portfolio/page_heart.html' %} {% endcomment %}
             {% else %}
                 <div class="game-container">
                     {{ page.iframe|safe }}
                 </div>
                 <div class="game-metadata">
                     {% include "portfolio/page_metadata.html" %}
-                    {% include 'portfolio/page_heart.html' %}
+                    {% comment %} {% include 'portfolio/page_heart.html' %} {% endcomment %}
                 </div>
             {% endif %}
         </div>
