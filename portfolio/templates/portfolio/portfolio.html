@@ -1,7 +1,10 @@
-{% extends 'portfolio/base.html' %}
+{% extends 'portfolio/base.html' %} 
 
-{% block body %}{{ super }}
-    {% include "portfolio/navbar.html" %}
-    {% include "portfolio/header.html" %}
+{% load static %} 
+{% block body %}{{ super }} 
+    {% include "portfolio/preloader.html" %}
+    {% include "portfolio/navbar.html" %} 
+    {% include "portfolio/header.html" %} 
     {% include "portfolio/content.html" %}
+    <script src="{% static 'js/preloader.js' %}"></script>
 {% endblock body %}

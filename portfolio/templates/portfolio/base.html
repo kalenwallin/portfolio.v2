@@ -3,45 +3,65 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kalen Wallin's Portfolio</title>
-        <meta name="author" content="Kalen Wallin">
-        <meta name="description" content="Kalen Wallin's Portfolio showcases his skills through jobs,
-        programming projects, school transcripts, community service, and life experiences.">
+        <meta name="author" content="Kalen Wallin" />
+        <meta
+            name="description"
+            content="Kalen Wallin's Portfolio showcases his skills through jobs,
+        programming projects, school transcripts, community service, and life experiences."
+        />
 
         <!-- basic favicon -->
-        <link rel="icon" type="image/svg+xml" href="https://i.kalenwallin.com/file/portfoliov2/media/favicon.svg">
-        <link rel="icon" type="image/png" href="https://i.kalenwallin.com/file/portfoliov2/media/favicon.png">
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://i.kalenwallin.com/file/portfoliov2/media/favicon.svg"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://i.kalenwallin.com/file/portfoliov2/media/favicon.png"
+        />
 
         <!-- Facebook sharing data -->
-        <meta property="og:image" content="https://i.kalenwallin.com/file/portfoliov2/media/portfoliov2.png">
-        <meta property="og:description" content="Showcasing his skills through jobs,
-        programming projects, school transcripts, community service, and life experiences.">
-        <meta property="og:title" content="Kalen Wallin | Portfolio">
-        <meta property="og:url" content="https://dj.kalenwallin.com">
-        <meta property="og:type" content="website">
+        <meta
+            property="og:image"
+            content="https://i.kalenwallin.com/file/portfoliov2/media/portfoliov2.png"
+        />
+        <meta
+            property="og:description"
+            content="Showcasing his skills through jobs,
+        programming projects, school transcripts, community service, and life experiences."
+        />
+        <meta property="og:title" content="Kalen Wallin | Portfolio" />
+        <meta property="og:url" content="https://dj.kalenwallin.com" />
+        <meta property="og:type" content="website" />
 
         <!-- Twitter sharing data -->
-        <meta name="twitter:title" content="Kalen Wallin | Portfolio">
+        <meta name="twitter:title" content="Kalen Wallin | Portfolio" />
 
-    	<!-- Sheets -->
-    	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    	<link href="{% static 'css/themes.css' %}" rel="stylesheet">
-    	<link href="{% static 'css/app.css' %}" rel="stylesheet">
+        <!-- Sheets -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <link href="{% static 'css/themes.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/app.css' %}" rel="stylesheet" />
 
-    	<!-- Scripts -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- Scripts -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.drawsvg/1/jquery.drawsvg.min.js"></script>
 
-    	{% block head %}
-    	{% endblock head %}
+        {% block head %} {% endblock head %}
     </head>
     <body>
-        {% block body %}
-        {% endblock body %}
-        {% block bodyjs %}
-        {% endblock bodyjs %}
+        {% block body %} {% endblock body %} {% block bodyjs %} {% endblock bodyjs %}
         <script src="{% static 'js/animation.js' %}"></script>
     </body>
 </html>

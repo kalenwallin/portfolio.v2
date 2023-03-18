@@ -73,3 +73,12 @@ body {
 .contact-button:hover {
     background: transparent;
 }
+
+.preloader {
+    background: var(--black);
+}
+
+.hide {
+    opacity: 0;
+    font-weight: lighter;
+}
