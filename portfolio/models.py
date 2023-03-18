@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 
 from markdownfield.models import MarkdownField, RenderedMarkdownField
@@ -82,7 +83,10 @@ class Article(models.Model):
     # the content of this article
     conent = MarkdownField(rendered_field='content_rendered',
                            validator=VALIDATOR_STANDARD, blank=True, null=True)
+    # the content of this article in html format
     content_rendered = RenderedMarkdownField(blank=True, null=True)
+    # url slug generated from the name of the article
+    slug = AutoSlugField(populate_from='name', blank=True, null=True)
 
     def __str__(self):
         if self.short_description:
