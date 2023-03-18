@@ -3,7 +3,7 @@
     {% for row in rows %}
         <div class="navbar-icon-container" id="navbar-icon-{{ row.order }}">
             <a href="#row-{{ row.order }}-container">
-                <img class="navbar-icon" src="{{ backblaze_url }}/media/{{ row.icon }}" href="#row-{{ row.order }}">
+                <img class="navbar-icon" src="{{ row.icon }}" href="#row-{{ row.order }}">
             </a>
         </div>
     {% endfor %}

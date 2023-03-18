@@ -2,16 +2,16 @@
 {% for row in rows %}
     <div class="netflix-slider row-container" id="row-{{ row.order }}-container">
         <div class="row-icon-title-container" id="row-icon-title-{{ row.order }}-container">
-            <img src="{{ backblaze_url }}/media/{{ row.icon }}" class="row-icon animate to-spin" id="row-icon-{{ row.order }}">
+            <img src="{{ row.icon }}" class="row-icon animate to-spin" id="row-icon-{{ row.order }}">
             &nbsp
-            <p class="row-title animate to-slide-left" id="row-title-{{ row.order }}">{{ row.title }}</p>
+            <p class="row-title animate to-slide-left" id="row-title-{{ row.order }}">{{ row.name }}</p>
         </div>
         <div class="swiper" id="row-carousel-{{ row.order }}-container">
             <div class="swiper-wrapper">
-                {% for item in row.item_set.all|dictsort:"order" %}
+                {% for item in row.article_set.all|dictsort:"order" %}
                     <div class="swiper-slide">
-                        <a href="{% url 'page' item.page_set.first.slug  %}">
-                            <img src="{{ backblaze_url }}/media/{{ item.cover_image }}">
+                        <a href="{% url 'page' item.slug  %}">
+                            <img src="{{ item.image_url }}">
                         </a>
                     </div>
                 {% endfor %}
