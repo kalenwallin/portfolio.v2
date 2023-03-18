@@ -1,17 +1,19 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Row, Page, Lover
+from .models import Page, Lover, Category
 
 
 def index(request):
-    rows = Row.objects.order_by('order')
+    rows = Category.objects.order_by('order')
     context = {'rows': rows}
     return render(request, 'portfolio/portfolio.html', context)
+
 
 def fappy_borbs(request):
     return render(request, 'portfolio/fappy_borbs/fappy_borbs.html')
 
 # Hearting code modified from here: https://www.youtube.com/watch?v=AZwc9hDBi04
+
 
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -20,6 +22,7 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
+
 
 class page(generic.DetailView):
     model = Page
@@ -33,6 +36,7 @@ class page(generic.DetailView):
         if Lover.objects.filter(ip=ip).exists():
             context['ip'] = Lover.objects.filter(ip=ip).first()
         return context
+
 
 def page_heart(request, id):
     if request.method == "POST":
