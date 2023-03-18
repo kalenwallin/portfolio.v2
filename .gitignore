@@ -5,24 +5,17 @@ __pycache__
 db.sqlite3
 media
 
-# Environments 
-.env 
-.venv 
-env/ 
-venv/ 
-ENV/ 
-env.bak/ 
-venv.bak/ 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 .vercel
 
-# Static & Media 
-
+# Static & Media
 media/
 .vscode/settings.json
-portfolio/__pycache__/views.cpython-39.pyc
-portfolio/__pycache__/models.cpython-39.pyc
-portfolio/__pycache__/admin.cpython-39.pyc
-portfolio/__pycache__/models.cpython-39.pyc
-portfolio/__pycache__/urls.cpython-39.pyc
-portfolio/__pycache__/views.cpython-39.pyc
 *.pyc
