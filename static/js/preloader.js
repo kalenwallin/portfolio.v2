@@ -49,7 +49,7 @@ tl.to(".svg-line", {
 });
 tl.to(".preloader", {
     opacity: 0,
-    duration: 0.3,
+    duration: 0.6,
     onComplete: () => {
         // headings and buttons
         elements = document.querySelectorAll(".to-animate");
