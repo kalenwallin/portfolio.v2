@@ -63,6 +63,9 @@ tl.to(".preloader", {
             e.classList.remove("to-animate-line");
             e.classList.add("hero-line-vertical");
         });
+        // hero lines
+        var hero = $(".line-container svg").drawsvg();
+        hero.drawsvg("animate");
     },
 });
 tl.to(".svg-line", {
