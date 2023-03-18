@@ -83,9 +83,7 @@ class Article(models.Model):
     content_rendered = RenderedMarkdownField(blank=True, null=True)
 
     def __str__(self):
-        if self.position:
-            return str(self.name) + " - " + str(self.position)
-        elif self.short_description:
+        if self.short_description:
             return str(self.name) + " - " + str(self.short_description)
         else:
             return str(self.name)
