@@ -2,7 +2,7 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl.to(".hide", {
     x: "0%",
-    duration: 2,
+    duration: 0.3,
     opacity: 1,
 });
 
@@ -49,7 +49,7 @@ tl.to(".svg-line", {
 });
 tl.to(".preloader", {
     opacity: 0,
-    duration: 1,
+    duration: 0.3,
     onComplete: () => {
         // headings and buttons
         elements = document.querySelectorAll(".to-animate");
