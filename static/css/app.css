@@ -623,10 +623,8 @@ img {
     z-index: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .prl-logo {
-        font-size: 1rem;
-    }
+.to-animate, .to-animate-line, .svg-line {
+    opacity: 0;
 }
 
 @media (min-width:641px) {
