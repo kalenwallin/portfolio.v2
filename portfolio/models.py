@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 
 from markdownfield.models import MarkdownField, RenderedMarkdownField
@@ -25,13 +26,6 @@ class Item(models.Model):
         return self.title
 
 
-class Lover(models.Model):
-    ip = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.ip
-
-
 class Page(models.Model):
     story = models.TextField(blank=True, null=True)
     pdf = models.FileField(upload_to='page/pdf', default='empty', blank=True,
@@ -43,11 +37,6 @@ class Page(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     author = models.TextField(blank=True)
-    hearts = models.ManyToManyField(Lover, related_name="page_hearts",
-                                    blank=True)
-
-    def total_hearts(self):
-        return self.hearts.count()
 
     def __str__(self):
         return str(self.item) + "'s Page"
@@ -80,9 +69,15 @@ class Article(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
                                  default=None, blank=True, null=True)
     # the content of this article
-    conent = MarkdownField(rendered_field='content_rendered',
-                           validator=VALIDATOR_STANDARD, blank=True, null=True)
+    content = MarkdownField(rendered_field='content_rendered',
+                            validator=VALIDATOR_STANDARD, blank=True,
+                            null=True)
+    # the content of this article in html format
     content_rendered = RenderedMarkdownField(blank=True, null=True)
+    # url slug generated from the name of the article
+    slug = AutoSlugField(populate_from='name', blank=True, null=True)
+    # priority of the article
+    order = models.IntegerField(default=1)
 
     def __str__(self):
         if self.short_description:
