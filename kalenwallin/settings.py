@@ -32,8 +32,9 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel-app', '.now.sh', 'dj.kalenwallin.com',
-                 'localhost', '*.kalenwallin.com', 'kalenwallin.com']
+ALLOWED_HOSTS = ['.vercel-app', '.now.sh', 'v2.kalenwallin.com',
+                 'localhost', '*.kalenwallin.com', 'kalenwallin.com',
+                 'dj.kalenwallin.com',]
 
 # Markdownfield requirement
 SITE_URL = 'dj.kalenwallin.com'
