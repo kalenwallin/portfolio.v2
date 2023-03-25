@@ -59,23 +59,13 @@ class Article(models.Model):
     image_url = models.CharField(max_length=200, blank=True, null=True)
     # name of article
     name = models.CharField(max_length=200, blank=True, null=True)
-    # short description of article
-    short_description = models.CharField(max_length=200, blank=True, null=True)
-    # when you started work
-    start_date = models.CharField(max_length=200, blank=True, null=True)
-    # when you finished work
-    end_date = models.CharField(max_length=200, blank=True, null=True)
     # which category this article belongs to
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
                                  default=None, blank=True, null=True)
-    # the content of this article
-    content = MarkdownField(rendered_field='content_rendered',
-                            validator=VALIDATOR_STANDARD, blank=True,
-                            null=True)
-    # the content of this article in html format
-    content_rendered = RenderedMarkdownField(blank=True, null=True)
     # url slug generated from the name of the article
     slug = AutoSlugField(populate_from='name', blank=True, null=True)
+    # url slug for v3 article
+    v3slug = models.CharField(max_length=200, blank=True, null=True)
     # priority of the article
     order = models.IntegerField(default=1)
 

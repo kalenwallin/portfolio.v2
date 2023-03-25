@@ -3,8 +3,11 @@
 {% block body %}{{ super }}
     {% include "portfolio/page_navbar.html" %}
     {% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
+    {% with v3_url="https://v3.kalenwallin.com/" %}
     <div class="{% if page.is_game %}game{% else %}page{% endif %}">
         <div class="content">
+            <iframe src="{{ v3_url }}{{ article.v3slug }}" style="height: 89vh; border: none;" />
+            {% comment %}
             {% if not page.is_game %}
                 {% include "portfolio/page_metadata.html" %}
                 <div class="image-container">
@@ -23,25 +26,19 @@
 
                     </div>
                 {% endif %}
-                {% comment %} {% include 'portfolio/page_heart.html' %} {% endcomment %}
             {% else %}
                 <div class="game-container">
                     {{ page.iframe|safe }}
                 </div>
                 <div class="game-metadata">
                     {% include "portfolio/page_metadata.html" %}
-                    {% comment %} {% include 'portfolio/page_heart.html' %} {% endcomment %}
                 </div>
             {% endif %}
+            {% endcomment %}
         </div>
     </div>
     {% endwith %}
+    {% endwith %}
 {% endblock body %}
 {% block bodyjs %}
-    <script src="https://unpkg.com/htmx.org@1.6.0"></script>
-    <script>
-        document.body.addEventListener('htmx:configRequest', (e) => {
-            e.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
-        });
-    </script>
 {% endblock bodyjs %}
