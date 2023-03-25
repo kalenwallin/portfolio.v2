@@ -1,9 +1,6 @@
 from autoslug import AutoSlugField
 from django.db import models
 
-from markdownfield.models import MarkdownField, RenderedMarkdownField
-from markdownfield.validators import VALIDATOR_STANDARD
-
 
 class Row(models.Model):
     title = models.CharField(max_length=200)
@@ -64,13 +61,13 @@ class Article(models.Model):
                                  default=None, blank=True, null=True)
     # url slug generated from the name of the article
     slug = AutoSlugField(populate_from='name', blank=True, null=True)
-    # url slug for v3 article
+    # url slug for v3 article embed
     v3slug = models.CharField(max_length=200, blank=True, null=True)
     # priority of the article
     order = models.IntegerField(default=1)
 
     def __str__(self):
-        if self.short_description:
-            return str(self.name) + " - " + str(self.short_description)
+        if self.v3slug:
+            return str(self.name) + " - " + str(self.v3slug)
         else:
             return str(self.name)
