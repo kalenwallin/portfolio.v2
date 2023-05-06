@@ -161,10 +161,19 @@ img {
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/headerimage2.jpg');
+    background-image: url('https://i.kalenwallin.com/file/portfoliov2/media/hero.svg');
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
+}
+
+.hero object {
+    display: block;
+    position: absolute;
+    top: -1em;
+    left: 0;
+    opacity: 0;
 }
 
 .hero .left-vignette-layer {
@@ -427,54 +436,6 @@ img {
     animation: none;
 }
 
-@media screen and (orientation:portrait) {
-    .hero {
-        background-position: 53.5%;
-    }
-
-    .hero-content {
-        display: none;
-    }
-
-    .hero-content-vertical {
-        top: calc(5vh + 10vw);
-        left: 50%;
-        transform: translateX(-50%);
-        align-items: center;
-        width: 50%;
-        padding: 25px 10px 25px 10px;
-        margin-bottom: 25px;
-
-    }
-
-    .hero-content-vertical h1, .hero-content-vertical h2 {
-        text-align: center;
-    }
-
-    .slide-in-from-top-header {
-        opacity: 0;
-        animation: 750ms ease 0s 1 slideInFromTop;
-        animation-delay: calc(var(--order) * 400ms);
-        animation-fill-mode: forwards;
-    }
-
-    .hero-line-vertical {
-        transform: rotateX(180deg);
-        display: none;
-    }
-
-    .path {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 10s linear forwards;
-    }
-
-    @keyframes dash {
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
-}
 
 @media screen and (orientation:landscape) {
     .hero-content {
@@ -561,7 +522,7 @@ img {
 }
 
 /* Template:
- * Header
+* Header
  */
 .explore-button {
     padding: 10px 15px;
@@ -584,8 +545,8 @@ img {
 }
 
 /* Template:
- * Preloader
- */
+* Preloader
+*/
 .preloader {
     position: fixed;
     top: 0;
@@ -692,10 +653,11 @@ img {
 
 
 @media (min-width:961px) {
+
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 
     /* Template:
-     * Navbar
+    * Navbar
      */
     .navbar-container {
         height: 62px;
@@ -801,5 +763,58 @@ img {
         height: 3.5em;
         width: 3.5em;
 
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .hero {
+        background-position: 53.5%;
+    }
+
+    .hero object {
+        height: 100%;
+    }
+
+    .hero-content {
+        display: none;
+    }
+
+    .hero-content-vertical {
+        top: calc(5vh + 10vw);
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        width: 50%;
+        padding: 25px 10px 25px 10px;
+        margin-bottom: 25px;
+
+    }
+
+    .hero-content-vertical h1, .hero-content-vertical h2 {
+        text-align: center;
+    }
+
+    .slide-in-from-top-header {
+        opacity: 0;
+        animation: 750ms ease 0s 1 slideInFromTop;
+        animation-delay: calc(var(--order) * 400ms);
+        animation-fill-mode: forwards;
+    }
+
+    .hero-line-vertical {
+        transform: rotateX(180deg);
+        display: none;
+    }
+
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 10s linear forwards;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
     }
 }
