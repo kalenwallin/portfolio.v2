@@ -171,7 +171,7 @@ img {
 .hero object {
     display: block;
     position: absolute;
-    top: -1em;
+    top: 0;
     left: 0;
     opacity: 0;
 }

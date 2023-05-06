@@ -44,11 +44,11 @@ tl.to(".to-animate", {
 });
 tl.to(".to-animate-line", {
     opacity: 0,
-    duration: 0,
+    duration: 1,
 });
 tl.to(".svg-line", {
     opacity: 0,
-    duration: 0,
+    duration: 1,
 });
 
 imagesLoaded("body", { background: true }, function () {
