@@ -598,13 +598,14 @@ img {
     }
 }
 
+
 @media (min-width:641px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
     /* Template:
-     * Navbar
-     */
+    * Navbar
+    */
     .navbar-container {
         height: 62px;
     }
@@ -624,11 +625,41 @@ img {
     }
 }
 
+@media (min-width:320px) and (min-height:641px) {
+    .hero object {
+        left: -217%;
+    }
+}
+
+@media (min-width:375px) and (min-height:641px) {
+    .hero object {
+        left: -176%;
+    }
+}
+
+@media (min-width:425px) and (min-height:641px) {
+    .hero object {
+        left: -147%;
+    }
+}
+
+@media (min-width:641px) and (min-height:641px) {
+    .hero object {
+        left: -42%;
+    }
+}
+
+@media (min-width:899px) and (min-height:641px) {
+    .hero object {
+        left: 0;
+    }
+}
+
 @media (min-width:768px) {
 
     /* Template:
-     * Header
-     */
+    * Header
+    */
 
     .explore-button {
         padding: 10px 25px;
