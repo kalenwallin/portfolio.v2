@@ -64,7 +64,6 @@ body {
 
 .page {
     width: 100%;
-    max-width: 713px;
     margin: auto;
 }
 
@@ -96,13 +95,6 @@ body {
 .page .title-container h1 {
     margin-bottom: 0;
 }
-
-/* .page .date-container {}
-
-.date-container .metadata {
-    /* font size small */
-/* font color grey */
-/*} */
 
 .doc-iframe {
     width: 100vw;
@@ -609,12 +601,6 @@ img {
 @media (min-width:641px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    /* Template:
-     * Page
-     */
-    /* .page {
-        padding-top: 62px;
-    } */
 
     /* Template:
      * Navbar
@@ -639,14 +625,6 @@ img {
 }
 
 @media (min-width:768px) {
-
-    /* Template:
-     * Page
-     */
-    .page {
-        width: 75%;
-        margin: auto;
-    }
 
     /* Template:
      * Header
@@ -699,16 +677,6 @@ img {
 
 @media (min-width:1024px) {
 
-    /* big landscape tablets, laptops, and desktops */
-    /* Template:
-     * Page
-     */
-    .page {
-        width: 71%;
-        margin: auto;
-        /* padding-top: 72px; */
-    }
-
     /* Template:
      * Navbar
      */
@@ -729,16 +697,6 @@ img {
 
 
 @media (min-width:1440px) {
-
-    /* hi-res laptops and desktops */
-    /* Template:
-     * Page
-     */
-    .page {
-        width: 50%;
-        margin: auto;
-        /* padding-top: 72px; */
-    }
 
     /* Template:
      * Navbar
@@ -761,13 +719,6 @@ img {
 @media (min-width:2560px) {
 
     /* hi-res laptops and desktops */
-    /* Template:
-     * Page
-     */
-    .page {
-        /* padding-top: 82px; */
-        width: 28%;
-    }
 
     /* Template:
      * Navbar
