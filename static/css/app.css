@@ -588,6 +588,24 @@ img {
     opacity: 0;
 }
 
+@media (min-width:320px) {
+    .hero object {
+        left: -132%;
+    }
+}
+
+@media (min-width:375px) {
+    .hero object {
+        left: -106%;
+    }
+}
+
+@media (min-width:425px) {
+    .hero object {
+        left: -86%;
+    }
+}
+
 @media (min-width:641px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -613,6 +631,10 @@ img {
     .page-navbar-icon {
         height: 2.6em;
         width: 2.6em;
+    }
+
+    .hero object {
+        left: 0;
     }
 }
 
@@ -773,6 +795,7 @@ img {
 
     .hero object {
         height: 100%;
+        left: -42%;
     }
 
     .hero-content {
