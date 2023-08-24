@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import environ
-from pathlib import Path
 import socket
+from pathlib import Path
+
+import environ
 
 socket.getaddrinfo("localhost", 8080)
 
@@ -58,7 +59,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "markdownfield",
+    "corsheaders",
+    "rest_framework",
     "autoslug",
 ]
 
@@ -69,6 +71,7 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "kalenwallin.urls"
@@ -169,3 +172,5 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
+
+CORS_ORIGIN_WHITELIST = ["http://localhost:8080", "https://v2.kalenwallin.com"]
