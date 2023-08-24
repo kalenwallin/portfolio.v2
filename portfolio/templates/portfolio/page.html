@@ -6,35 +6,7 @@
     {% with v3_url="https://v3.kalenwallin.com/" %}
     <div class="{% if page.is_game %}game{% else %}page{% endif %}">
         <div class="content">
-            <iframe src="{{ v3_url }}{{ article.v3slug }}" style="height: 89vh; border: none;" />
-            {% comment %}
-            {% if not page.is_game %}
-                {% include "portfolio/page_metadata.html" %}
-                <div class="image-container">
-                    <img src="{{ article.image_url }}">
-                </div>
-                {% if page.story %}
-                    <div class="story-container">
-                        {{ page.story|safe }}
-                    </div>
-                {% elif page.pdf %}
-                    <div class="pdf-container">
-
-                    </div>
-                {% elif page.iframe %}
-                    <div class="iframe-container">
-
-                    </div>
-                {% endif %}
-            {% else %}
-                <div class="game-container">
-                    {{ page.iframe|safe }}
-                </div>
-                <div class="game-metadata">
-                    {% include "portfolio/page_metadata.html" %}
-                </div>
-            {% endif %}
-            {% endcomment %}
+            <iframe src="{{ v3_url }}{{ article.v3slug }}" style="height: 85vh; border: none;" />
         </div>
     </div>
     {% endwith %}
