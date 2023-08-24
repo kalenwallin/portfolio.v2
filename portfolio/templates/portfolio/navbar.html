@@ -1,9 +1,9 @@
 {% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
 <div class="navbar-container">
-    {% for row in rows %}
-        <div class="navbar-icon-container" id="navbar-icon-{{ row.order }}">
-            <a href="#row-{{ row.order }}-container">
-                <img class="navbar-icon" src="{{ row.icon }}" href="#row-{{ row.order }}">
+    {% for row, icon, posts in rows %}
+        <div class="navbar-icon-container" id="navbar-icon-{{ row }}">
+            <a href="#row-{{ row }}-container">
+                <img class="navbar-icon" src="{{ icon }}" href="#row-{{ row }}">
             </a>
         </div>
     {% endfor %}

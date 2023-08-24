@@ -1,21 +1,53 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views import View, generic
-from .models import Category, Article, Post, Posts
+from .models import Article, Post, Posts
 
 
 def index(request):
-    rows = Category.objects.order_by("order")
+    
+    rows = [
+        "Featured Experiences",
+        "Work Experiences",
+        "Pet Projects",
+        "School Projects",
+        "Blog",
+    ]
+    icons = [
+        "https://i.kalenwallin.com/file/portfoliov2/sharex/featured.png",
+        "https://i.kalenwallin.com/file/portfoliov2/media/briefcase-outline.png",
+        "https://i.kalenwallin.com/file/portfoliov2/sharex/pet.png",
+        "https://i.kalenwallin.com/file/portfoliov2/sharex/school.png",
+        "https://i.kalenwallin.com/file/portfoliov2/sharex/blog.png",
+    ]
+
+    posts = Post.objects.all().filter(public=True).order_by("-published")
+    print(posts)
+    featured = posts.filter(featured=True)
+    print("Featured")
+    print(featured)
+    work = posts.filter(work=True)
+    print("Work")
+    print(work)
+    pet = posts.filter(pet=True)
+    print("Pet")
+    print(pet)
+    school = posts.filter(school=True)
+    print("School")
+    print(school)
+    blog = posts.filter(blog=True)
+    print("Blog:")
+    print(blog)
+    posts = [featured, work, pet, school, blog]
+
+    rows = zip(rows, icons, posts)
+
     context = {"rows": rows}
     return render(request, "portfolio/portfolio.html", context)
 
 
-def fappy_borbs(request):
-    return render(request, "portfolio/fappy_borbs/fappy_borbs.html")
-
-
 class page(generic.DetailView):
-    model = Article
+    model = Post
     template_name = "portfolio/page.html"
 
     def get_context_data(self, **kwargs):

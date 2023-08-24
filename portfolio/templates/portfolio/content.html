@@ -1,26 +1,28 @@
-{% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
-{% for row in rows %}
-    <div class="netflix-slider row-container" id="row-{{ row.order }}-container">
-        <div class="row-icon-title-container" id="row-icon-title-{{ row.order }}-container">
-            <img src="{{ row.icon }}" class="row-icon animate to-spin" id="row-icon-{{ row.order }}">
-            &nbsp
-            <p class="row-title animate to-slide-left" id="row-title-{{ row.order }}">{{ row.name }}</p>
-        </div>
-        <div class="swiper" id="row-carousel-{{ row.order }}-container">
-            <div class="swiper-wrapper">
-                {% for item in row.article_set.all|dictsort:"order" %}
-                    <div class="swiper-slide">
-                        <a href="{% url 'page' item.slug  %}">
-                            <img src="{{ item.image_url }}">
-                        </a>
-                    </div>
-                {% endfor %}
+<div id="content">
+    {% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
+    {% for item in rows %}
+        <div class="netflix-slider row-container" id="row-{{ row }}-container">
+            <div class="row-icon-title-container" id="row-icon-title-{{ row }}-container">
+                <img src="{{ icon }}" class="row-icon animate to-spin" id="row-icon-{{ row }}">
+                &nbsp
+                <p class="row-title animate to-slide-left" id="row-title-{{ row }}">{{ row }}</p>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper" id="row-carousel-{{ row }}-container">
+                <div class="swiper-wrapper">
+                    {% for post in posts %}
+                        <div class="swiper-slide">
+                            <a href="{% url 'page' post.slug  %}">
+                                <img src="{{ post.cover }}">
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>
 
 {% block bodyjs %}
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

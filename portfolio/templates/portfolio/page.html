@@ -2,14 +2,12 @@
 
 {% block body %}{{ super }}
     {% include "portfolio/page_navbar.html" %}
-    {% with backblaze_url="https://i.kalenwallin.com/file/portfoliov2" %}
     {% with v3_url="https://v3.kalenwallin.com/" %}
-    <div class="{% if page.is_game %}game{% else %}page{% endif %}">
+    <div class="page">
         <div class="content">
-            <iframe src="{{ v3_url }}{{ article.v3slug }}" style="height: 85vh; border: none;" />
+            <iframe src="{{ v3_url }}{{ post.slug }}" style="height: 85vh; border: none;" />
         </div>
     </div>
-    {% endwith %}
     {% endwith %}
 {% endblock body %}
 {% block bodyjs %}
