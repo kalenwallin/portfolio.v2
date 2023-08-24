@@ -66,5 +66,5 @@ class init(View):
                 pet=pet,
                 blog=blog,
             )
-        # Posts.objects.all().delete()
+        Posts.objects.all().delete()
         return JsonResponse({"status": "success"})
