@@ -1,2 +1,3 @@
-# portfolio.v2
-Second portfolio for showing off my work. Built with Django
+[![Demo](https://file.notion.so/f/s/e2a80852-b4b4-4774-8735-95c1ed544fd9/v2_demo.mp4?id=d92c6549-659e-4796-967f-c4ded6b990b8&table=block&spaceId=cd70831b-555b-4b5b-8a91-01b5143fa3c2&expirationTimestamp=1693476000000&signature=DZ2MV9gR1rak9ZXM9W0OoPhsQHa5VgBnID-aJyeaJh8)](https://file.notion.so/f/s/e2a80852-b4b4-4774-8735-95c1ed544fd9/v2_demo.mp4?id=d92c6549-659e-4796-967f-c4ded6b990b8&table=block&spaceId=cd70831b-555b-4b5b-8a91-01b5143fa3c2&expirationTimestamp=1693476000000&signature=DZ2MV9gR1rak9ZXM9W0OoPhsQHa5VgBnID-aJyeaJh8 "Demo")
+
+[Learn more about this project](https://kalenwallin.com/portfoliov2).
