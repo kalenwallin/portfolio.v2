@@ -6,8 +6,11 @@
 </p>
 
 <p align="center">A Django website to showcase my skills through experiences.</p>
-<a href="https://kalenwallin.com/portfoliov2"><p align="center">Learn more about this project on my blog</p></a>
 
-
+# Demo
 
 https://github.com/kalenwallin/portfolio.v2/assets/31481852/80ee7028-6090-472f-8ddb-4239c1e2a695
+
+[Visit this website](https://v2.kalenwallin.com/)
+or
+[learn more about this project on my blog](https://kalenwallin.com/portfoliov2).
