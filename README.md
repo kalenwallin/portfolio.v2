@@ -12,3 +12,49 @@
 https://github.com/kalenwallin/portfolio.v2/assets/31481852/80ee7028-6090-472f-8ddb-4239c1e2a695
 
 [Visit this website](https://v2.kalenwallin.com/) or [learn more about this project on my blog](https://kalenwallin.com/portfoliov2).
+
+## Getting Started
+
+### Installation
+
+1. Create a virtual environment
+2. Activate the virtual environment
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Get environment variables from Vercel
+
+   ```bash
+   vc env pull
+   ```
+
+5. Run migrations:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+6. Start the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+The server will start at `http://127.0.0.1:8000/`
+
+### Optional Commands
+
+- Create a superuser to access the admin panel:
+
+  ```bash
+  python manage.py createsuperuser
+  ```
+
+- Collect static files (for production):
+
+  ```bash
+  python manage.py collectstatic
+  ```
